@@ -1,2 +1,2 @@
 <div align="center">
-## Justice must be served. 
+Justice must be served. 
