@@ -1,0 +1,46 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-bg: #020617; /* slate-950 */
+  --color-brand-card: #0f172a; /* slate-900 */
+  --color-brand-input: #1e293b; /* slate-800 */
+  --color-brand-amber: #f59e0b; /* amber-500 */
+  --color-brand-amber-hover: #d97706; /* amber-600 */
+  --font-serif: "Playfair Display", serif;
+  --font-sans: "Inter", "Noto Sans Bengali", sans-serif;
+
+  --animate-marquee: marquee 30s linear infinite;
+  
+  @keyframes marquee {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--color-brand-bg);
+  color: #ffffff;
+  min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-brand-bg);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-brand-input);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-brand-amber);
+}

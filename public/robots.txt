@@ -1,0 +1,19 @@
+User-agent: *
+Allow: /
+Disallow: 
+
+Sitemap: https://justice-for-zubeen-garg.web.app/sitemap.xml
+
+# Crawl rate
+Crawl-delay: 1
+Request-rate: 1/10s
+
+# Google
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0
+
+# Bing
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
